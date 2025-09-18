@@ -1,5 +1,6 @@
 import React from "react";
 import flower_img from '../../assets/Images/flowers.png'
+import icon_bag from '../../assets/Icons/icon_bag.png'
 const SeekerQuestions = () => {
   const conversations = [
     {
@@ -102,7 +103,7 @@ const SeekerQuestions = () => {
                   Attach Photo For Healing
                 </label>
                 <img
-                  src="src/assets/Icons/icon_bag.png"
+                  src={icon_bag}
                   alt="attach"
                   className="h-4 w-4 mr-12"
                 />
