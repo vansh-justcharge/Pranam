@@ -2,6 +2,8 @@ import React from "react";
 import pub_one from "../../assets/Images/books.jpg";
 import pub_two from "../../assets/Images/light.jpg";
 import pub_three from "../../assets/Images/karm.jpg";
+import icon_one from '../../assets/Icons/icon_message.png'
+import icon_two from '../../assets/Icons/icon_bag_two.png'
 
 const publications = [
   {
@@ -38,11 +40,11 @@ const Publications = () => {
       {/* Toggle */}
       <div className="flex flex-col sm:flex-row gap-4 sm:gap-x-12 mb-10 w-full max-w-5xl justify-center">
         <button className="flex items-center gap-2 px-6 xl:px-24 py-2 rounded-xl text-black font-semibold shadow-xl text-lg sm:text-lg">
-          <img src="src/assets/Icons/icon_message.png" alt="Meena Om" className="w-3 h-3 mr-2" />
+          <img src={icon_one} alt="Meena Om" className="w-3 h-3 mr-2" />
           Meena Om
         </button>
         <button className="flex items-center gap-2 px-6 xl:px-24 py-2 rounded-xl shadow-xl text-black font-semibold text-lg sm:text-lg">
-          <img src="src/assets/Icons/icon_bag_two.png" alt="Guest" className="w-3 h-3 mr-2" />
+          <img src={icon_two} alt="Guest" className="w-3 h-3 mr-2" />
           Guest
         </button>
       </div>

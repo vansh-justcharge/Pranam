@@ -5,6 +5,7 @@ import cardThree from "../../assets/Images/card_three.png";
 import cardFour from "../../assets/Images/card_four.png";
 import cardFive from "../../assets/Images/card_five.png";
 import cardSix from "../../assets/Images/card_six.png";
+import flower from "../../assets/Icons/deco_flower.png";
 
 const DailyDelights = () => {
   const sliderRef = useRef(null);
@@ -49,12 +50,12 @@ const DailyDelights = () => {
       >
         5 July 2025
         <img
-          src="src/assets/Icons/deco_flower.png"
+          src={flower}
           alt=""
           className="absolute top-[12px] left-[-35px]"
         />
         <img
-          src="src/assets/Icons/deco_flower.png"
+          src={flower}
           alt=""
           className="absolute top-0 right-[-20px] h-12"
           style={{ transform: "scaleX(-1)" }}
