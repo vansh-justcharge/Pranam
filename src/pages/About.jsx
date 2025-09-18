@@ -1,6 +1,7 @@
 import React from "react"; 
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
+ import mam from '../assets/Images/mam.png'
 
 const About = () => {
   return (
@@ -29,7 +30,7 @@ const About = () => {
       {/* Image */}
       <div className="mt-8">
         <img
-          src='src/assets/Images/mam.png'
+          src={mam}
           alt="Meena Om"
           className="w-full rounded-[44px] shadow-md"
         />
