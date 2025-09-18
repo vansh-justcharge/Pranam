@@ -1,5 +1,5 @@
 import React from "react";
-
+import flower_img from '../../assets/Images/flowers.png'
 const SeekerQuestions = () => {
   const conversations = [
     {
@@ -25,7 +25,7 @@ const SeekerQuestions = () => {
   return (
     <div className="min-h-screen w-full flex justify-center items-center font-bricolage bg-[#EFF1DD] relative">
       <img
-        src="src/assets/Images/flowers.png"
+        src={flower_img}
         alt="flowers"
         className="absolute left-0 top-0 h-full opacity-60"
         style={{ transform: "scaleX(1)" }}

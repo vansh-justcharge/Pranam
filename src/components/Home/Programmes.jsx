@@ -1,4 +1,6 @@
 import React from "react";
+import bg_image from "../../assets/Images/background.png";
+import flower_img from '../../assets/Images/card_bg.png'
 
 const programmes = [
   {
@@ -32,7 +34,7 @@ const Programmes = () => {
   return (
     <div className="w-full relative flex flex-col items-center py-12 px-4 bg-gradient-to-b from-[#FFFFFF] to-[#BCC57110] font-bricolage">
       <img
-    src="src/assets/Images/background.png"
+    src={bg_image}
     alt="flowers"
     className="absolute right-0 top-0 h-full object-contain"
     style={{ transform: "scaleX(-1)" }}
@@ -51,7 +53,7 @@ const Programmes = () => {
             className="bg-white/70 backdrop-blur-md rounded-2xl shadow-lg p-6 flex flex-col justify-between border border-gray-100"
             style={{
               backgroundImage:
-                "url('src/assets/Images/card_bg.png')",
+                `url(${flower_img})`,
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}

@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import videoSrc from "../../assets/video/pranam.mp4";
 
 const VideoSection = () => {
   const videoRef = useRef(null);
@@ -19,7 +20,7 @@ const VideoSection = () => {
         <div className="w-[1200px] h-[580px] rounded-3xl overflow-hidden shadow-lg">
           <video
             ref={videoRef}
-            src="src/assets/video/pranam.mp4"
+            src={videoSrc}
             loop
             className="w-full h-full object-cover"
             onMouseEnter={() => videoRef.current.play()}

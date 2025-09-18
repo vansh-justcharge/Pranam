@@ -1,4 +1,10 @@
 import React, { useRef } from "react";
+import cardOne from "../../assets/Images/card_one.png";
+import cardTwo from "../../assets/Images/card_two.png";
+import cardThree from "../../assets/Images/card_three.png";
+import cardFour from "../../assets/Images/card_four.png";
+import cardFive from "../../assets/Images/card_five.png";
+import cardSix from "../../assets/Images/card_six.png";
 
 const DailyDelights = () => {
   const sliderRef = useRef(null);
@@ -17,12 +23,12 @@ const DailyDelights = () => {
   };
 
   const cards = [
-    "src/assets/Images/card_one.png",
-    "src/assets/Images/card_two.png",
-    "src/assets/Images/card_three.png",
-    "src/assets/Images/card_four.png",
-    "src/assets/Images/card_five.png",
-    "src/assets/Images/card_six.png",
+    cardOne,
+    cardTwo,
+    cardThree,
+    cardFour,
+    cardFive,
+    cardSix,
   ];
 
   return (

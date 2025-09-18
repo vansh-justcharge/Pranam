@@ -3,17 +3,19 @@ import { FaHeart, FaPlay } from "react-icons/fa";
 import heart from "../../assets/Icons/solar_heart-bold.svg";
 import heart_bold from "../../assets/Icons/solar_heart-bold.png";
 import button from '../../assets/Icons/Button.png'
+import moment_one from '../../assets/Images/momets_one.jpg'
+import moment_two from '../../assets/Images/moment_two.jpg'
 
 const moments = [
   {
     id: 1,
-    image: "src/assets/Images/momets_one.jpg",
+    image: moment_one,
     platform: "Instagram",
     i: heart_bold
   },
   {
     id: 2,
-    image: "src/assets/Images/moment_two.jpg",
+    image: moment_two,
     platform: "Instagram",
     i: heart
   },

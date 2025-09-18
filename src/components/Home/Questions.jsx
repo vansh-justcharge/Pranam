@@ -1,6 +1,7 @@
 import React from "react";
 import arrow from '../../assets/Icons/arrow-up.png'
 import heart from '../../assets/Icons/heart.png'
+import flower_img from '../../assets/Images/background.png'
 
 const Questions = () => {
   const conversations = [
@@ -31,7 +32,7 @@ const Questions = () => {
       <div
         className="w-full max-w-7xl p-6 md:p-10 relative bg-[#EFF1DD]">
           <img
-            src="src/assets/Images/background.png"
+            src={flower_img}
             alt="flowers"
             className="absolute left-0 top-0 h-full opacity-60"
             style={{ transform: "scaleX(1)" }}

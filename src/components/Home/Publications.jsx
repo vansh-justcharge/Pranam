@@ -1,4 +1,7 @@
 import React from "react";
+import pub_one from "../../assets/Images/books.jpg";
+import pub_two from "../../assets/Images/light.jpg";
+import pub_three from "../../assets/Images/karm.jpg";
 
 const publications = [
   {
@@ -6,21 +9,21 @@ const publications = [
     title: "The Path of Truth",
     description:
       "A journey into the depths of spiritual awakening and self-discovery.",
-    image: "src/assets/Images/books.jpg",
+    image: pub_one,
   },
   {
     id: 2,
     title: "Love & Light",
     description:
       "Understanding the universal language of love and divine illumination.",
-    image: "src/assets/Images/light.jpg",
+    image: pub_two,
   },
   {
     id: 3,
     title: "Karm & Consciousness",
     description:
       "Exploring the eternal cycle of action and spiritual evolution.",
-    image: "src/assets/Images/karm.jpg",
+    image: pub_three,
   },
 ];
 
