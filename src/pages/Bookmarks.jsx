@@ -18,10 +18,10 @@ const Bookmarks = () => {
     <div>
       <NavBar />
       <div className="max-w-7xl mx-auto px-6 py-20">
-        <h1 className="text-3xl font-bold mb-6">My Bookmarks</h1>
+        <h1 className="text-4xl font-bold mb-6">My Bookmarks</h1>
 
         {bookmarks.length === 0 ? (
-          <p className="text-lg text-gray-600">No bookmarks yet.</p>
+          <p className=" h-screen text-xl text-gray-600">No bookmarks yet.</p>
         ) : (
           <div className="flex w-full">
             <div className="w-full flex flex-wrap gap-6">
