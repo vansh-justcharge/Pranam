@@ -23,37 +23,40 @@ const Bookmarks = () => {
         {bookmarks.length === 0 ? (
           <p className="text-lg text-gray-600">No bookmarks yet.</p>
         ) : (
-          <div className="w-full  md:w-[40%] lg:w-[200px] xl:w-[270px]">
-            {bookmarks.map((book) => (
-              <div
-                key={book.id}
-                className="relative bg-white rounded-xl shadow-xl overflow-hidden hover:shadow-2xl duration-300 hover:scale-105 transition-transform"
-              >
-                {/* Image */}
-                <Link to={`/publications/${book.id}`} state={{ book }}>
-                  <img
-                    src={book.image}
-                    alt={book.title}
-                    className="w-full "
-                  />
-                </Link>
-
-                {/* Details */}
-                <div className="p-4">
-                  <h2 className="text-xl font-semibold">{book.title}</h2>
-                  <p className="text-sm text-gray-600">{book.subtitle}</p>
-                  <p className="mt-2 font-bold">{book.price}</p>
-                </div>
-
-                {/* Remove Button */}
-                <button
-                  onClick={() => dispatch(removeBookmark(book.id))}
-                  className="absolute top-3 right-3 bg-red-500 text-white px-3 py-1 text-sm rounded-lg shadow hover:bg-red-600"
+          <div className="flex w-full">
+            <div className="w-full flex flex-wrap gap-6">
+              {bookmarks.map((book) => (
+                <div
+                  key={book.id}
+                  className="relative bg-white rounded-xl shadow-xl overflow-hidden hover:shadow-2xl duration-300 hover:scale-105 transition-transform w-64"
                 >
-                  Remove
-                </button>
-              </div>
-            ))}
+                  {/* Image */}
+                  <Link to={`/publications/${book.id}`} state={{ book }}>
+                    <img
+                      src={book.image}
+                      alt={book.title}
+                      className="w-full"
+                    />
+                  </Link>
+
+                  {/* Details */}
+                  <div className="p-4">
+                    <h2 className="text-xl font-semibold">{book.title}</h2>
+                    <p className="text-sm text-gray-600">{book.subtitle}</p>
+                    <p className="mt-2 font-bold">{book.price}</p>
+                  </div>
+
+                  {/* Remove Button */}
+                  <button
+                    onClick={() => dispatch(removeBookmark(book.id))}
+                    className="absolute top-3 right-3 bg-red-500 text-white px-3 py-1 text-sm rounded-lg shadow hover:bg-red-600"
+                  >
+                    Remove
+                  </button>
+                </div>
+              ))}
+            </div>
+
           </div>
         )}
       </div>
