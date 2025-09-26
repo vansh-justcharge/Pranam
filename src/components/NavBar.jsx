@@ -8,7 +8,6 @@ const NavBar = () => {
   const menuItems = [
     { name: "प्रणाम हिंदी", path: "/hindi" },
     { name: "About", path: "/about" },
-    { name: "Live", path: "/live" },
     { name: "Blog", path: "/blog" },
     { name: "Publication", path: "/publications" },
     { name: "Bookmarks", path: "/bookmarks" },
